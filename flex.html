@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      .navlist {
+        display: flex;
+        justify-content: space-around;
+        gap: 20%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+      }
+      .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      input {
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: antiquewhite;
+        padding: 15px 35px;
+      }
+      .btn-primary {
+        margin-top: 20px;
+        height: 50px;
+        border: none;
+        background-color: aqua;
+        border-radius: 10px;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      input:focus {
+        border: none;
+        background-color: cornflowerblue;
+        outline: none;
+      }
+      .btn-primary:hover {
+        background-color: goldenrod;
+        cursor: pointer;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navlist">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Join</a>
+        </div>
+        <a href="">Login</a>
+      </nav>
+    </header>
+    <main>
+      <section class="form-container">
+        <form action="">
+          <h1>Please Login!</h1>
+          <input type="text" name="" placeholder="Enter Your Name" id="" />
+          <input type="email" name="" placeholder="Enter Your Email" id="" />
+          <input type="password" name="" placeholder="Enter Password" id="" />
+          <button class="btn-primary">Log In</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
