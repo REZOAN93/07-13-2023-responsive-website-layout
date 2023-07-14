@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 10px;
+    }
+    .box {
+      background-color: aqua;
+      height: 500px;
+      border: 1px solid black;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .box-inside {
+      display: grid;
+      height: 45%;
+      grid-template-rows: 40% 40%;
+      border: 1px solid black;
+      background-color: antiquewhite;
+    }
+    .box-infor {
+      background-color: blueviolet;
+      width: 50%;
+      height: 100%;
+    }
+    .box-ref{
+        display: flex;
+
+    }
+  </style>
+  <body>
+    <main>
+      <div class="box">
+        <h1>This is me</h1>
+      </div>
+      <div class="box">
+        <div class="box-inside"><h1>This is me</h1></div>
+        <div class="box-inside">
+          <div class="box-ref">
+            <div class="box-infor"><h1>This isme</h1></div>
+            <div class="box-infor"><h1>This is me</h1></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

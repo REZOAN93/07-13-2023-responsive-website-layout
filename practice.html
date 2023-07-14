@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .fist_part {
+      display: flex;
+    }
+    .box-half {
+      width: 50%;
+      height: 65vh;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    p {
+      padding: 0px 20px;
+    }
+    h1 {
+      padding: 0px 20px;
+    }
+    .secondpart{
+        flex-direction: row-reverse;
+    }
+    @media screen and (max-width: 576px) {
+        .fist_part{
+            flex-direction: column;
+        }
+        .box-half{
+            width: 100%;
+        }
+    }
+  </style>
+  <body>
+    <div class="fist_part">
+      <div class="box-half">
+        <img src="./assets/rome (1).jpg" alt="" />
+      </div>
+      <div class="box-half">
+        <h1>The City of Rome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          ipsam.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          quidem error accusantium officiis, veritatis rerum, ipsum neque
+          reprehenderit modi officia, debitis autem eveniet dolores eos et
+          deleniti? Optio, hic molestiae, quia, nihil eum tempora voluptatum
+          deleniti molestias temporibus eveniet eaque.
+        </p>
+      </div>
+    </div>
+    <div class="fist_part secondpart">
+      <div class="box-half">
+        <img src="./assets/rome (3).jpg" alt="" />
+      </div>
+      <div class="box-half">
+        <h1>The City of Rome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          ipsam.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          quidem error accusantium officiis, veritatis rerum, ipsum neque
+          reprehenderit modi officia, debitis autem eveniet dolores eos et
+          deleniti? Optio, hic molestiae, quia, nihil eum tempora voluptatum
+          deleniti molestias temporibus eveniet eaque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
